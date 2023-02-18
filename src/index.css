@@ -14,3 +14,11 @@ a {
 li {
   list-style: none;
 }
+
+* {
+  --bnbcolor: rgb(34, 202, 244);
+}
+
+.bnbcolor {
+  color: var(--bnbcolor);
+}
