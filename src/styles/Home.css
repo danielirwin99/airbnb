@@ -50,6 +50,7 @@ Menu
 
 .menu {
   padding: 20px 14px;
+  margin: 0 20px;
 }
 
 .menu__list {
@@ -85,9 +86,11 @@ Menu
 Featured Images
 */
 
-.featured {
+#featured,
+#popular {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .featured__images {
@@ -127,7 +130,7 @@ Featured Images
 
 .featured__main {
   width: 50%;
-  margin-left: 10px;
+  margin: 0 10px;
   padding-top: 4px;
   position: relative;
   cursor: pointer;
@@ -137,12 +140,20 @@ Featured Images
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  transition: 500ms all ease;
+  transition: all 500ms ease;
 }
 
-.featuredImage:hover {
+.featured__main:hover .featuredImage {
   filter: blur(8px);
-  opacity: 0.8;
+}
+
+.featured__main:hover .featured__description {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featured__main:hover .featured__background {
+  opacity: 0.75;
 }
 
 .featured__background {
@@ -153,28 +164,24 @@ Featured Images
   height: 100%;
   background-color: #1c1d25;
   border-radius: 8px;
-  opacity: 0.75;
+  opacity: 0;
   object-fit: cover;
   overflow: hidden;
+  transition: all 450ms ease;
 }
 
 .featured__description {
   position: absolute;
-  top: 50%;
-  left: 50px;
+  top: 10%;
+  left: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 1;
-  /* opacity: 0; */
-  transition: opacity 300ms, transform 450ms ease;
+  opacity: 0;
+  transition: opacity 300ms, transform 600ms ease;
   max-width: 600px;
-}
-
-.featured__description:hover {
-  opacity: 1;
-  transform: translateY(50%);
 }
 
 .featured__header {
@@ -186,7 +193,7 @@ Featured Images
 .ratings {
   display: flex;
   color: orange;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .featured__sub-header {
@@ -194,11 +201,16 @@ Featured Images
   font-style: oblique;
   color: var(--bnbcolor);
   letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.popular {
   margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .featured__price {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: white;
 }
 
@@ -208,4 +220,29 @@ Featured Images
   border: none;
   font-size: 24px;
   color: var(--bnbcolor);
+  background-color: aliceblue;
+  cursor: pointer;
+  transition: 200ms all ease;
+}
+
+.featured__button:hover {
+  opacity: 0.8;
+}
+
+.featured__button:active {
+  background-color: #242424;
+  transition: 350ms all ease;
+}
+
+@media (max-width: 1124px) {
+  .topBar__header {
+    font-size: 24px;
+  }
+
+  .featured {
+  }
+
+  .topBar__link {
+    font-size: 20px;
+  }
 }

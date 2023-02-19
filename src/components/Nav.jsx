@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/Logo.png";
 import "../styles/Nav.css";
+import Modal from "./Modal";
 import SearchBar from "./SearchBar";
 
 const Nav = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <nav>
       <div className="nav__container">
@@ -13,19 +16,20 @@ const Nav = () => {
         <SearchBar />
         <ul className="nav__list">
           <li className="nav__links">
-            <a className="nav__link" href="">
-              Listings
+            <a className="nav__link" href="#popular">
+              Popular
             </a>
           </li>
           <li className="nav__links">
-            <a className="nav__link" href="">
+            <a className="nav__link" href="#featured">
               Featured
             </a>
           </li>
           <li className="nav__links">
-            <a href="">
-              <button className="contact">Contact</button>
-            </a>
+            <button onClick={() => setShow(true)} className="contact">
+              Contact
+            </button>
+            <Modal toggle={show} setShow={setShow} />
           </li>
         </ul>
       </div>

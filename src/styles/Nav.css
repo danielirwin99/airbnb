@@ -1,7 +1,7 @@
 nav {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgba(0,0,0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .nav__container {
@@ -30,7 +30,6 @@ nav {
 .nav__links {
   margin-left: 20px;
   transition: all 150ms ease-in-out;
-
 }
 
 .nav__link {
@@ -58,3 +57,11 @@ nav {
   opacity: 0.8;
 }
 
+@media (max-width: 1024px) {
+  .nav__link:nth-child(1) {
+    display: none;
+  }
+  .nav__container{
+    margin: 0 10px;
+  }
+}

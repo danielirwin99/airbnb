@@ -1,0 +1,55 @@
+.test__container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.test__carousel {
+  display: flex;
+  border: 1px solid #242424;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.test__header {
+  margin-bottom: 28px;
+}
+
+.test__card {
+  display: flex;
+  width: 30%;
+}
+
+.testImage__wrapper {
+  width: 40%;
+  height: 100%;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.test__description {
+  width: 60%;
+}
+
+.testImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+.test__description {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.test__name {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.test__para {
+  font-size: 14px;
+  font-style: oblique;
+}
