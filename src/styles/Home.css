@@ -7,6 +7,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  padding: 0 5px;
 }
 
 /* 
@@ -239,10 +240,46 @@ Featured Images
     font-size: 24px;
   }
 
-  .featured {
+ .ratings {
+  display: none;
+ }
+
+ .featured__description {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+ .featured__header {
+  font-size: 30px;
+ }
+
+  .featured__sub-header {
+    display: none;
   }
 
   .topBar__link {
     font-size: 20px;
+  }
+}
+
+@media (max-width:768px) {
+  .featured__description {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+  }
+
+  .featured__price {
+    margin-bottom: 30px;
+  }
+  .featured__button {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  .featured__header {
+    margin-bottom: 20px;
   }
 }

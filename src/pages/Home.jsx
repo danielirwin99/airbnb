@@ -18,12 +18,6 @@ import Testimonials from "../components/Testimonials";
 import Modal from "../components/Modal";
 
 const Home = () => {
-  const [show, setShow] = useState(false);
-
-  function toggleModal() {
-    setShow(!show);
-    console.log("yess");
-  }
   return (
     <div className="home__container">
       {/* Above the Navbar */}
