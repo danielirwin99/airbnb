@@ -6,16 +6,18 @@ import Beach from "../assets/beach.jpg";
 import City from "../assets/city.jpg";
 import DogFriendly from "../assets/dogfriendly.jpg";
 import Camping from "../assets/camping.jpg";
-import House1 from '../assets/house1.jpg'
-import House2 from "../assets/house2.jpg"
+import House1 from "../assets/house1.jpg";
+import House2 from "../assets/house2.jpg";
 
 const Listings = () => {
   return (
     <div className="listings">
       <div className="card">
-        <figure className="image__container">
+        <div className="image__container">
           <img className="image" src={House} alt="House" />
-        </figure>
+          <div className="image__background"/>
+          <button className="book__now">Book Now</button>
+        </div>
         <div className="headerAndRatings">
           <h2 className="card__header">City , State</h2>
           <div className="card__rating--wrapper">

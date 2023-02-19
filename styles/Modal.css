@@ -1,0 +1,115 @@
+.modal {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+.modal:active {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.modal__container {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 40px 30px 30px 30px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.cross {
+  position: absolute;
+  font-size: 28px;
+  top: 20px;
+  right: 24px;
+  color: white;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.cross:hover {
+  transform: scale(1.04);
+}
+
+.modal__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__header {
+  color: var(--bnbcolor);
+  letter-spacing: 4px;
+  margin-bottom: 40px;
+  text-decoration: underline;
+}
+
+.modal__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email__header,
+.message__header {
+  margin-bottom: 20px;
+  color: var(--bnbcolor);
+}
+
+.message__header {
+  margin-top: 32px;
+}
+
+.email,
+.message {
+  min-width: 500px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 20px;
+}
+
+.message {
+  height: 100px;
+  resize: none;
+}
+
+.submit__button {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 16px 40px;
+  border-radius: 40px;
+  border: none;
+  font-size: 28px;
+  color: var(--bnbcolor);
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+.submit__button:hover {
+  opacity: 0.8;
+}
+
+.submit__button:active {
+  opacity: 1;
+}
