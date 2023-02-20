@@ -13,11 +13,12 @@ import Secondary1 from "../assets/Secondary1.jpg";
 import Secondary2 from "../assets/Secondary2.jpg";
 import Secondary3 from "../assets/Secondary3.jpg";
 import Secondary4 from "../assets/Secondary4.jpg";
-import { IoBook } from "react-icons/io5";
 import Testimonials from "../components/Testimonials";
 import Modal from "../components/Modal";
+import { Link } from "react-router-dom";
 
 const Home = () => {
+  
   return (
     <div className="home__container">
       {/* Above the Navbar */}
@@ -31,7 +32,7 @@ const Home = () => {
       {/* NavBar */}
       <Nav />
       {/* Toggling */}
-      
+
       {/* Menu Icons */}
       <div className="menu">
         <ul className="menu__list">
@@ -108,7 +109,9 @@ const Home = () => {
                 right on your doorstep."
               </h2>
               <h3 className="featured__price">Starting from $749 per night</h3>
-              <button className="featured__button">Book Now</button>
+              <Link to="/booking">
+                <button className="featured__button">Book Now</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -135,7 +138,9 @@ const Home = () => {
                 comfort and indulgence.
               </h2>
               <h3 className="featured__price">Starting from $749 per night</h3>
-              <button className="featured__button">Book Now</button>
+              <Link to="/booking">
+                <button className="featured__button">Book Now</button>
+              </Link>
             </div>
           </div>
           <div className="featured__secondary">

@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/Logo.png";
 import Home from "../pages/Home";
 import "../styles/Nav.css";
 import Modal from "./Modal";
 import SearchBar from "./SearchBar";
 
-const Nav = () => {
+const BookingNavBar = () => {
   const [show, setShow] = useState(false);
 
   const home = () => {
@@ -13,7 +15,6 @@ const Nav = () => {
       return false;
     }
   };
-
   return (
     <nav>
       <div className="nav__container">
@@ -23,15 +24,11 @@ const Nav = () => {
         <SearchBar />
         <ul className="nav__list">
           <li className="nav__links">
-            <a className="nav__link" href="#popular">
-              Popular
-            </a>
+            <Link to="/" className="nav__link booking">
+              Home
+            </Link>
           </li>
-          <li className="nav__links">
-            <a className="nav__link" href="#featured">
-              Featured
-            </a>
-          </li>
+          
           <li className="nav__links">
             <button onClick={() => setShow(true)} className="contact">
               Contact
@@ -44,4 +41,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default BookingNavBar;

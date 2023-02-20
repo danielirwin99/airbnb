@@ -38,6 +38,11 @@ nav {
   font-weight: bold;
 }
 
+.booking {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
 .nav__links:hover {
   transform: scale(1.08);
 }

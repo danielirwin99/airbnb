@@ -1,20 +1,19 @@
 .test__container {
   padding: 10px;
-  display: inline-block;
   flex-direction: column;
   align-items: center;
-  overflow-x: visible;
   scroll-behavior: smooth;
+  overflow-x: scroll;
+  text-align: center;
 }
 
 .test__carousel {
-  display: flex;
-  border: 1px solid #242424;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  border: 1px solid lightgrey;
   padding: 16px;
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin:0 20px;
-
+  overflow-x: hidden;
 }
 
 .test__header {
@@ -23,19 +22,19 @@
 
 .test__card {
   display: flex;
-  width: 200px;
-  height: 100px;
+  width: 500px;
+  border-right: 1px solid lightgrey;
+}
+
+.test__card:last-child {
+  border: none;
 }
 
 .testImage__wrapper {
   width: 40%;
   height: 100%;
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
-.test__description {
-  width: 60%;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .testImage {
@@ -45,16 +44,36 @@
 }
 
 .test__description {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.test__description {
   text-align: center;
   margin-right: 10px;
 }
 
 .test__name {
-  font-size: 16px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 .test__para {
-  font-size: 14px;
+  font-size: 16px;
   font-style: oblique;
+  color: var(--bnbcolor);
+}
+
+.test__ratings {
+  color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.rating {
+  font-size: 16px;
 }

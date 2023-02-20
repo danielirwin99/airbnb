@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Testimonials.css";
+import { IoMdStar } from "react-icons/io";
+import {IoStarHalf} from 'react-icons/io5'
 
 const Testimonials = () => {
   return (
@@ -20,6 +22,13 @@ const Testimonials = () => {
               "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quisquam, enim.
             </h3>
+            <div className="test__ratings">
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoStarHalf className="rating" />
+            </div>
           </div>
         </div>
         <div className="test__card">
@@ -36,6 +45,13 @@ const Testimonials = () => {
               "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quisquam, enim."
             </h3>
+            <div className="test__ratings">
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoStarHalf className="rating" />
+            </div>
           </div>
         </div>
         <div className="test__card">
@@ -52,6 +68,13 @@ const Testimonials = () => {
               "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quisquam, enim.""
             </h3>
+            <div className="test__ratings">
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoStarHalf className="rating" />
+            </div>
           </div>
         </div>
         <div className="test__card">
@@ -68,6 +91,13 @@ const Testimonials = () => {
               "Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Quisquam, enim."
             </h3>
+            <div className="test__ratings">
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoMdStar className="rating" />
+              <IoStarHalf className="rating" />
+            </div>
           </div>
         </div>
       </div>
