@@ -72,7 +72,6 @@
 
 .card:hover .book__now {
   opacity: 1;
-  transform: translateY(0);
 }
 
 .image__container:hover .image__background {
