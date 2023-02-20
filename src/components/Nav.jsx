@@ -8,11 +8,9 @@ import SearchBar from "./SearchBar";
 const Nav = () => {
   const [show, setShow] = useState(false);
 
-  const home = () => {
-    if (!Home) {
-      return false;
-    }
-  };
+  function toggleModal () {
+    setShow(true)
+  }
 
   return (
     <nav>
@@ -33,10 +31,10 @@ const Nav = () => {
             </a>
           </li>
           <li className="nav__links">
-            <button onClick={() => setShow(true)} className="contact">
+            <button onClick={() => toggleModal()} className="contact">
               Contact
             </button>
-            <Modal toggle={show} setShow={setShow} />
+            <Modal show={show} setShow={setShow} />
           </li>
         </ul>
       </div>

@@ -17,8 +17,8 @@ import Testimonials from "../components/Testimonials";
 import Modal from "../components/Modal";
 import { Link } from "react-router-dom";
 
-const Home = () => {
-  
+const Home = ({toggleModal}) => {
+
   return (
     <div className="home__container">
       {/* Above the Navbar */}
@@ -30,9 +30,9 @@ const Home = () => {
         </a>
       </div>
       {/* NavBar */}
-      <Nav />
+      <Nav toggleModal={toggleModal} />
       {/* Toggling */}
-
+      <Modal />
       {/* Menu Icons */}
       <div className="menu">
         <ul className="menu__list">

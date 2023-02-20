@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Modal.css";
 import { ImCross } from "react-icons/im";
 
-const Modal = ({children, show, setShow}) => {
+const Modal = () => {
 
   return (
     <div className="modal">
