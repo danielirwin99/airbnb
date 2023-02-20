@@ -9,6 +9,26 @@
   --bnbbg: rgba(0, 0, 0, 0.025);
 }
 
+::-webkit-scrollbar {
+  height: 10px; /* height of horizontal scrollbar  */
+  width: 8px; /* width of vertical scrollbar */
+  border: 1px solid #d5d5d5;
+  padding-left: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: #eeeeee;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #b0b0b0;
+  margin-left: 10px;
+}
+
 body {
   background-color: rgba(0, 0, 0, 0.025);
   overflow-x: hidden;

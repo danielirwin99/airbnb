@@ -241,7 +241,7 @@ Featured Images
   }
 
  .ratings {
-  display: none;
+  margin-top: 10px;
  }
 
  .featured__description {

@@ -35,6 +35,12 @@
   transform: scale(1.06);
 }
 
+@media (max-width: 1124px) {
+  .searchBar {
+    width: 100px;
+    margin-left: 30px;
+  }
+}
 @media (max-width: 1024px) {
   .searchBar__input {
     font-size: 14px;
