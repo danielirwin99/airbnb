@@ -9,15 +9,33 @@ const booking = () => {
     <>
       <BookingNavBar />
       <div className="booking__container">
-        <div className="booking__details">
+        <div className="booking__row">
           <div className="booking__firstHalf">
             <h1 className="booking__header">Booking</h1>
             <div className="booking__description">
-              <div className="booking__description--one">
-                <div className="booking__nights">
-                  <h2 className="book__nights--header">How many nights?</h2>
-                  <input type="number" />
-                </div>
+              <div className="booking__details">
+                <h2 className="booking__details--header">
+                  How many nights?
+                </h2>
+                <input className="booking__details--input" type="number" />
+              </div>
+              <div className="booking__details">
+                <h2 className="booking__details--header">
+                  How Many Guests?
+                </h2>
+                <input className="booking__details--input" type="number" />
+              </div>
+              <div className="booking__details">
+                <h2 className="booking__details--header">
+                  How many nights?
+                </h2>
+                <input className="booking__details--input" type="number" />
+              </div>
+              <div className="booking__details">
+                <h2 className="booking__details--header">
+                  How many nights?
+                </h2>
+                <input className="booking__details--input" type="number" />
               </div>
             </div>
           </div>
