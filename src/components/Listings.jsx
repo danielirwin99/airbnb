@@ -10,6 +10,7 @@ import House1 from "../assets/house1.jpg";
 import House2 from "../assets/house2.jpg";
 import { Link } from "react-router-dom";
 import { FaSpinner } from "react-icons/fa";
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Listings = () => {
   const [loading, setLoading] = useState(false);

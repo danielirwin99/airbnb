@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,Suspense } from "react";
 import Nav from "../components/Nav";
 import "../styles/Home.css";
 import { AiFillHome } from "react-icons/ai";
